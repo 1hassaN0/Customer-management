@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ادارة الزبائن</title>
+    <link rel="icon" href="imgs/WhatsApp_Image_2023-09-01_at_6.42.38_PM-removebg-preview.png">
+
+</head>
+<body>
+    
+    <div class="container2">
+        <scetion class="scetion2">
+            <header>
+                <nav class="head-nav">
+                    <img src="imgs/WhatsApp_Image_2023-09-01_at_6.42.38_PM-removebg-preview.png" width="60px" height="60px">
+
+                    <input class="input" name="text" placeholder="البحث عن زبون..." type="search" onkeyup="searchData(this.value)">    
+                    <button class="btn-creat" id="creat">اضافة زبون جديد</button>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </nav>
+            </header>
+
+            <div class="bordar-creat" id="bordarcreat1">
+                <input type="text" class="input-creat" placeholder="اسم الزبون" id="thename">
+                <input type="number" class="input-creat" placeholder="الدولار $" id="dolar">
+                <input type="number" class="input-creat" placeholder="رقم الهاتف" id="thephone">
+                <input type="number" class="input-creat" placeholder="المبلغ الكلي" id="themoney">
+                <input type="number" class="input-creat" placeholder="عدد الاشهر" id="themonth">
+                <input type="date" class="input-creat" placeholder="تاريخ الانشاء" id="thedate"> 
+                <input type="number" class="input-creat" placeholder="الاستقطاع الشهري" id="thedicont"> 
+                <button type="button" class="button" id="submit">
+                    <span class="button__text"></span>
+                    <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor" height="24" fill="none" class="svg"><line y2="19" y1="5" x2="12" x1="12"></line><line y2="12" y1="12" x2="19" x1="5"></line></svg></span>
+                </button>
+            </div>
+            <div class="border-res">
+                <nav class="resolte-nav">
+                    <h3>الاحصائيات</h3>
+                    <button onclick="reloadPage()"><img src="icons/refresh.png"></button>
+                    
+                </nav>
+                <div class="border-res2">
+                   <div class="resolte-num1">
+                    <h3>المبالغ الكلية</h3>
+                    <h4 id="total1">5,600,400</h4>
+                </div>
+                <div class="resolte-num1">
+                    <h3>عدد الزبائن</h3>
+                    <h4 id="total2">23</h4>
+                </div>
+                <div class="resolte-num1">
+                    <h3>مجموع الاستقطاعات الشهرية</h3>
+                    <h4 id="total3">1,200,000</h4>
+                </div> 
+                <div class="resolte-num1">
+                    <h3>الدولار    $</h3>
+                    <h4 id="total4">500</h4>
+                </div> 
+                </div>
+                
+            </div>
+            <table class="table1">   
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>$</th>
+                        <th>تاريخ الانشاء</th>
+                        <th>رقم الهاتف</th>
+                        <th>الاستقطاع</th>
+                        <th>عدد الاشهر</th>
+                        <th>المبلغ الكلي</th>
+                        <th>اسم الزبون</th>
+                        <th>التفاصيل</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+            <div class="bordar-details0" id="borddetals">
+                
+            </div>
+            <div class="div-close">
+                <button class="closebtn" id="closedetals">X</button>
+            </div>
+            
+        </scetion>
+    </div>
+
+    <script src="scrept2.js"></script>
+    <script src="scrept1.js"></script>
+    <script src="scrept.js"></script>
+</body>
+</html>
